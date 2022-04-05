@@ -27,6 +27,8 @@ function App() {
     },
   ]);
 
+  const [showAddTask, setShowAddTask] = useState(false);
+
 
   //ADD TASK
   const addTaskFunc = (newTask) => {
@@ -54,13 +56,14 @@ function App() {
   };
 
   // TOGGLE SHOW 
- 
+  const toggleShow = () => setShowAddTask(!showAddTask);
+
 
   return (
     <div className="container">
-      <Header title="Task Tracker"/>
+      <Header title="Task Tracker" showAddTask={showAddTask} toggleShow={toggleShow}/>
 
-      <AddTasks myAddTask={addTaskFunc} />
+      {showAddTask && <AddTasks myAddTask={addTaskFunc} />}
       
       {
         tasks.length > 0 ? (
