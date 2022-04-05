@@ -5,7 +5,7 @@ const Tasks = ({myTasks, myDeleteTaskFunc, myToggleDone}) => {
   return (
     <div>
         {
-            myTasks.map((eachTask)=> <Task myEachTask = {eachTask} myDeleteTaskFunc={myDeleteTaskFunc}  myToggleDone={myToggleDone} />)
+            myTasks.map((eachTask,index)=> <Task  key={index} myEachTask = {eachTask}  myDeleteTaskFunc={myDeleteTaskFunc}  myToggleDone={myToggleDone} />)
         }
 
         
