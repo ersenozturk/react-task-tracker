@@ -1,7 +1,5 @@
-<p>you can check the link ---> https://ersenozturk.github.io/react-task-tracker </p>
-
 # Project-Task Tracker
-
+<p>You can check the link ---> https://ersenozturk.github.io/react-task-tracker </p>
 ## Description
 
 Project aims to create a Task Tracker App.
