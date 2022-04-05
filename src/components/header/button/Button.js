@@ -1,11 +1,8 @@
-const Button = ({handleClickUseforButtonComp, myColor,  myText}) => {
-
-
-
+const Button = ({toggleShow, myColor,  myText}) => {
 
   return (
     <div>
-      <button  style={{backgroundColor: myColor }} className="btn" onClick={handleClickUseforButtonComp}> 
+      <button  style={{backgroundColor: myColor }} className="btn" onClick={toggleShow}> 
         {myText}
       </button>
     </div>
