@@ -51,7 +51,6 @@ function App() {
 
   // DELETE TASK
   const deleteTask = (deletedTaskID) => {
-    console.log({ deletedTaskID });
     setTasks(tasks.filter((taskk) => taskk.id !== deletedTaskID)); //!breakpoint
   };
 
